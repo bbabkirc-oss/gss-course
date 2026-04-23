@@ -1,0 +1,155 @@
+{
+  "course": {
+    "title": "GSS Course",
+    "subtitle": "Geodetic and Satellite Surveying",
+    "description": "Full course covering Geodesy and Satellite Surveying fundamentals",
+    "lectures": [
+      {
+        "id": 1,
+        "title": "Introduction to Geodesy",
+        "sections": [
+          {
+            "title": "Definitions and Fundamental Tasks",
+            "content": [
+              "Geodesy is the science of measuring and monitoring the Earth's size, shape, and gravity field in a three-dimensional, time-varying space.",
+              "Helmert’s Classical Definition (1880): The science of measurement and mapping of the Earth's surface.",
+              "Scientific Aspect: Determining Earth's shape, size, and temporal variations.",
+              "Practical Aspect: Establishing geodetic control networks for surveying and engineering."
+            ]
+          },
+          {
+            "title": "Strategic Objectives",
+            "content": [
+              "Earth Orientation in space",
+              "Gravity field modeling",
+              "Reference coordinate systems (X, Y, Z)",
+              "Geodynamics and crustal monitoring"
+            ]
+          },
+          {
+            "title": "Geodetic Surfaces",
+            "content": [
+              "Topographic Surface: real physical Earth surface",
+              "Geoid: Mean Sea Level reference (H)",
+              "Ellipsoid: mathematical model for GNSS (h)"
+            ],
+            "equations": [
+              "h = H + N"
+            ]
+          },
+          {
+            "title": "Historical Evolution",
+            "content": [
+              "Eratosthenes measured Earth's radius using shadow angles.",
+              "Newton proved Earth is oblate due to rotation.",
+              "Modern geodesy uses satellite systems (GNSS, SLR, VLBI)."
+            ]
+          },
+          {
+            "title": "Spherical Trigonometry",
+            "content": [
+              "Great circles represent shortest paths.",
+              "Spherical triangles have angle sum > 180°.",
+              "Used for distance and azimuth calculations."
+            ]
+          },
+          {
+            "title": "ECEF Coordinate System",
+            "content": [
+              "X-axis: Equator & Greenwich",
+              "Y-axis: perpendicular to X and Z",
+              "Z-axis: Earth's rotation axis"
+            ]
+          },
+          {
+            "title": "Astronomical Geodesy",
+            "content": [
+              "Astronomical triangle: Zenith, Pole, Star",
+              "Used to determine latitude and true north",
+              "Pre-satellite positioning technique"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Geometry of the Ellipsoid & Geodetic Coordinate Systems",
+        "sections": [
+          {
+            "title": "Oblate Spheroid Model",
+            "content": [
+              "Earth is modeled as an oblate spheroid.",
+              "Semi-major axis (a): equatorial radius.",
+              "Semi-minor axis (b): polar radius.",
+              "Flattening (f): measure of polar compression."
+            ],
+            "equations": [
+              "f = (a - b) / a",
+              "e² = (a² - b²) / a²",
+              "e'² = (a² - b²) / b²"
+            ]
+          },
+          {
+            "title": "Radii of Curvature",
+            "content": [
+              "Meridian radius (M): North-South distances.",
+              "Prime vertical radius (N): East-West distances.",
+              "Mean radius (R): approximation."
+            ],
+            "equations": [
+              "M = a(1 - e²) / (1 - e² sin²φ)^(3/2)",
+              "N = a / √(1 - e² sin²φ)",
+              "R = √(M × N)"
+            ]
+          },
+          {
+            "title": "Geodetic Coordinates",
+            "content": [
+              "Latitude (φ): angle from equatorial plane.",
+              "Longitude (λ): angle from Greenwich meridian.",
+              "Ellipsoidal height (h): measured along normal."
+            ]
+          },
+          {
+            "title": "ECEF Cartesian Coordinates",
+            "content": [
+              "Origin at Earth's center of mass.",
+              "Z-axis aligned with rotation axis.",
+              "X-axis passes Greenwich meridian.",
+              "Y-axis completes right-handed system."
+            ]
+          },
+          {
+            "title": "Coordinate Transformation",
+            "content": [
+              "Conversion from geodetic (φ, λ, h) to Cartesian (X, Y, Z).",
+              "Inverse conversion requires iterative computation."
+            ],
+            "equations": [
+              "X = (N + h) cosφ cosλ",
+              "Y = (N + h) cosφ sinλ",
+              "Z = [N(1 - e²) + h] sinφ"
+            ]
+          },
+          {
+            "title": "Geodetic Datums",
+            "content": [
+              "Datum defines ellipsoid shape and position.",
+              "Global datums: WGS84, GRS80.",
+              "Local datums: ED50, Adindan.",
+              "Uses 7-parameter transformation."
+            ]
+          },
+          {
+            "title": "Standard Ellipsoids",
+            "content": [
+              "WGS84: GPS standard.",
+              "Hayford 1924: historical usage.",
+              "Everest / Bessel: regional systems."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
